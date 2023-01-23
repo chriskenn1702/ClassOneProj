@@ -10,11 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            Image(systemName: "trophy.circle")
+                .resizable()
+                .scaledToFit()
+                .foregroundColor(Color("BC-Gold"))
             Text("You Are Awesome!")
                 .font(.title)
+                .fontWeight(.black)
+                .foregroundColor(Color("BC-Maroon"))
+            Button("Press Me!") {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            }
         }
         .padding()
     }
