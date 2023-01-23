@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var MessageString = "You Are Awesome!"
     var body: some View {
         VStack {
             Image(systemName: "trophy.circle")
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(Color("BC-Gold"))
-            Text("You Are Awesome!")
+            Text(MessageString)
                 .font(.title)
                 .fontWeight(.black)
                 .foregroundColor(Color("BC-Maroon"))
             Button("Press Me!") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                MessageString = "You Are Great!"
             }
         }
         .padding()
